@@ -1,0 +1,79 @@
+/* =========================
+   Estilo base (StoryMaps / GitHub Pages)
+   ========================= */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  background: #ffffff;
+  color: #111;
+}
+
+/* Contenedor general (por si el HTML tiene wrapper) */
+.main-container,
+.container,
+.wrapper {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 12px 14px;
+}
+
+/* =========================
+   htmlwidgets / plotly
+   ========================= */
+
+/* El widget (a veces viene como .html-widget o .plotly) */
+.html-widget,
+.plotly,
+.plotly html-widget {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+/* Hace que el gráfico se adapte al ancho del iframe (StoryMaps) */
+.plotly-graph-div {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+/* Asegura una altura razonable; StoryMaps suele funcionar bien con 520–700px */
+.plotly-graph-div,
+.html-widget {
+  min-height: 520px;
+}
+
+/* Evita que el gráfico quede “pegado” al borde */
+.plot-container,
+.svg-container {
+  margin: 0 auto;
+}
+
+/* =========================
+   Títulos (si tu HTML tiene h1/h2)
+   ========================= */
+h1, h2, h3 {
+  margin: 10px 0 8px;
+  line-height: 1.2;
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+/* =========================
+   Pequeños ajustes visuales
+   ========================= */
+
+/* Links más discretos */
+a { color: #0b3d91; }
+a:hover { text-decoration: underline; }
+
+/* Si hay scroll horizontal por algún motivo, esto ayuda */
+body {
+  overflow-x: hidden;
+}
